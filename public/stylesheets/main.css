@@ -1,0 +1,268 @@
+html, body {
+  height: 100%;
+}
+
+.parent {
+  /* 전체페이지 div */
+  width:100%; height : 100%;
+}
+#reloadSection{
+  /* 새로고침되는 영역 (아래 플레이어 빼고 남은 모든 영역 div) */
+  width:100%;
+  height:90%;
+}
+.topSection{
+  /* 상단영역div(메인,검색,친구 바 포함) */
+  display:flex;
+  width:100%;
+  height:10%;
+  /* border:solid 1px green; */
+}
+.mainBar{
+  /* 좌측상단 메인 영역 */
+  height: 100%;
+  flex:1;
+  text-align: center;
+  /* border:solid 1px green; */
+}
+.searchBar{
+  /* 중앙상단 검색 영역 */
+  height: 100%;
+  flex:2;
+}
+
+.logoutBar{
+  /* 우측상단 버튼집합 영역 */
+  height: 100%;
+  flex:1;
+}
+
+#mainBtn{
+  /* 메인버튼 */
+  border: 0;
+  background-color: white;
+  width: 50%;
+  height: 100%;
+}
+#mainbtn-img{
+  /* 메인버튼 이미지 */
+  border-radius: 8px;
+  width:100%;
+  height:100%;
+}
+
+.centerSearchDiv{
+  /* searchBar와 똑같은 부분(버튼들 flex 시키려고 만든부분) */
+  display: flex;
+  height: 100%;
+}
+#searchNselectDiv{
+  /* 검색종류선택창이랑 검색어 입력부분 */
+  flex:5;
+  height: 100%;
+  /* text-align-last: center; */
+}
+#searchBtnDiv{
+  /* 검색버튼 부분 */
+  flex:1;
+  height: 100%;
+  text-align-last: center;
+}
+
+#sel_search{
+  /* 검색종류선택창 */
+  border-radius: 8px;
+  border:0px;
+  background-color:#eceff6;
+  text-align-last: center;
+  width:15%;
+  height:40%
+}
+#inputText{
+  /* 검색어입력창 */
+  width: 80%;
+  height: 35%;
+  border:1px solid black;
+  border-radius: 8px;
+}
+#searchBtn{
+  /* 검색버튼 */
+  border-radius: 8px;
+  border:0;
+  background-color:#eceff6;
+  width: 60%;
+  height:40%;
+}
+
+._3btn{
+  /* 로그아웃바에서 상단부분에 버튼3개 집합영역 */
+  display: flex;
+  width:100%;
+}
+.mb{
+  /* 마이페이지버튼영역 */
+  flex:1;
+}
+#myPageBtn{
+  /* 마이페이지버튼 */
+  width:95%;
+  height:25px;
+  border:0;
+  border-radius: 8px;
+  background-color:#eceff6;
+  /* float: left; */
+}
+
+.fb{
+  /* 친구목록버튼영역 */
+  flex:1;
+}
+#friendsBtn{
+  /* 친구버튼 */
+  width:95%;
+  height:25px;
+  border:0;
+  border-radius: 8px;
+  background-color:#eceff6;
+}
+
+.lb{
+  /* 로그아웃버튼영역 */
+  flex:1;
+}
+#logoutBtn{
+  /* 로그아웃버튼 */
+  width:95%;
+  height:25px;
+  border:0;
+  border-radius: 8px;
+  background-color:#eceff6;
+  /* float:right; */
+}
+
+.welcome{
+  /* 로그아웃바에서 하단부분에 닉네임과 환영글 영역 */
+  width:100%;
+  height:50%;
+  text-align: center;
+}
+/* 여기까지가 TopSection 부분  */
+/* 아래부터는 reloadSection 부분 */
+
+._3cover{
+  /* 플레이리스트 sns 랭킹 세 부분 영역 */
+  display : flex;
+  /* border:solid 1px #292c33; */
+  width:100%;
+  height:85%;
+  height:90%;
+  /* border:solid 1px green; */
+}
+#Playlist{
+  flex:1;
+  border-top: 1px dashed gray;
+  /* border-radius: 10px; */
+  text-align: center;
+  overflow: scroll;
+  font-size: 12px;
+}
+#SNS {
+  flex:2;
+  border-radius: 10px;
+  overflow-y:scroll;
+   /* 각자 div 태그에 스크롤바 넣기. */
+}
+#Ranking {
+  flex:1;
+  text-align: center;
+  border-top: 1px dashed gray;
+  /* border-radius: 10px; */
+  font-size: 12px;
+  /* display:grid; */
+  width:100%;
+}
+#createBtn{
+  /* 게시물 작성 버튼 */
+  border :0;
+  border-radius: 10px;
+  background-color:#eceff6;
+  width: 100%;
+  height: 7%;
+  font-size:20px;
+  text-align: center;
+}
+
+#searchResultPage{
+  /* 검색결과창 영역 */
+  display:flex;
+  flex:3;
+}
+.songlist{
+  /* 플레이리스트 */
+  border-bottom:solid 1px white;
+  border-radius: 10px;
+  /* border-color:black; */
+}
+.ranklist{
+  /* 랭킹리스트 */
+  border-bottom:solid 1px white;
+  border-radius: 10px;
+  /* border-color:black; */
+}
+.frlist{
+  /* 친구리스트 */
+  border-bottom:solid 1px white;
+  border-radius: 10px;
+}
+
+.mslist{
+  /* 무드써치리스트 */
+  border-bottom:solid 1px white;
+  border-radius: 10px;
+  /* border-color:black; */
+}
+
+/* 여기까지가 중간부분 */
+/* 아래부터는 하단영역 */
+
+.MusicPlayer {
+  /* 하당영역 뮤직플레이어 부분 */
+  background-color: #292c33;
+  display: inline-flex;
+  border-radius: 10px;
+  height: 6%;
+  width: 100%;
+  align-items: center;
+  position : relative;
+}
+#nowPlayingSong{
+  /* 현재재생중인음악표시영역 */
+  color:white;
+  /*position: absolute;*/
+  left:15%;
+}
+#player{
+  /* 유튜브플레이어(안보이게설정해놓음)영역 */
+  width:0%;
+  height:0%;
+}
+.btn3{
+  /* 재생관련버튼3개영역 */
+  position: absolute;
+  right: 45%;
+}
+#ppBtn,#psBtn,#nsBtnBtn{
+  /* 재생/일시정지 버튼 */
+  background-color: #292c33;
+  border :0;
+  outline:0;
+}
+#btn-img,#psbtn-img,#nsbtn-img{
+  /* 재생관련버튼 이미지 */
+  display:block;
+  vertical-align: bottom;
+  border-radius: 13px;
+  border : 0px;
+  width :30px;
+  height:30px ;
+}

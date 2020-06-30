@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="/javascripts/searchShow.js"></script>
+  <meta charset="utf-8">
+  <title>
+
+  </title>
+</head>
+<body>
+  <div id="showWord">
+    <script>show_word()</script>
+  </div>
+
+  <div id="hashtagSNS" style="text-align: center;">
+        <script>
+        var boards = "<%= JSON.stringify(boards) %>";
+        var hashtags = "<%= JSON.stringify(hashtags) %>";
+        var boardsonglist = "<%= JSON.stringify(boardsonglist) %>";
+
+        boards = boards.replace(/&#34;/gi,'\"');
+        boards = boards.replace(/\\/gi,'\\\\');
+        boards = boards.replace(/&lt;/gi, '');
+        boards = boards.replace(/&gt;/gi, '');
+        boards = boards.replace(/br/gi, '\\n');
+        boards = boards.replace(/\\n/gi, '<br>');
+        boards = boards.replace(/uploads\\<br>/gi, 'uploads\\\\n');
+        boards = JSON.parse(boards);
+
+        hashtags = hashtags.replace(/&#34;/gi,'\"');
+        hashtags = JSON.parse(hashtags);
+
+        boardsonglist = boardsonglist.replace(/&#34;/gi,'\"');
+        boardsonglist = JSON.parse(boardsonglist);
+        hashtaginit(boards, hashtags, boardsonglist);
+        </script>
+
+      <br>
+  </div>
+</body>
+</html>

@@ -1,0 +1,187 @@
+#loginDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#localEmail {
+  border-right:0px;
+  border-left:0px;
+  border-top:0px;
+  width: 250px;
+}
+#localPasswd {
+  border-right:0px;
+  border-left:0px;
+  border-top:0px;
+  width: 250px;
+}
+#localLoginSubmit {
+  background-color: #B2EBF4;
+  width: 250px;
+  height: 40px;
+}
+#localLoginImg {
+  width: auto;
+  height: auto;
+  max-width: 300px;
+  max-height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#joinDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#joinName {
+  border-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
+  margin-left: 25px;
+  width: 250px;
+}
+#joinEmail {
+  border-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
+  margin-left: 25px;
+  width: 250px;
+}
+#joinPasswd {
+  border-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
+  margin-left: 25px;
+  width: 250px;
+}
+#joinPasswdConfirm {
+  border-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
+  margin-left: 25px;
+  width: 250px;
+}
+#joinSubmit {
+  background-color: #B2EBF4;
+  margin-left: 25px;
+  width: 250px;
+  height: 40px;
+}
+#joinImg {
+  width: auto;
+  height: auto;
+  max-width: 300px;
+  max-height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#findIDDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#findIDName {
+  border-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
+  margin-left: 25px;
+  width: 250px;
+}
+#findIDSubmit {
+  background-color: #B2EBF4;
+  margin-left: 25px;
+  width: 250px;
+  height: 40px;
+}
+#findIDImg {
+  width: auto;
+  height: auto;
+  max-width: 300px;
+  max-height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#IDViewDiv {
+  text-align: center;
+}
+#findPWDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#findPWName {
+  border-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
+  margin-left: 25px;
+  width: 250px;
+}
+#findPWEmail {
+  border-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
+  margin-left: 25px;
+  width: 250px;
+}
+#findPWSubmit {
+  background-color: #B2EBF4;
+  margin-left: 25px;
+  width: 250px;
+  height: 40px;
+}
+#findPWBtn {
+  margin: auto;
+  border-radius : 10px;
+}
+#updatePWDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#updatePWDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#updatePW {
+  border-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
+  margin-left: 25px;
+  width: 250px;
+}
+#updatePWConfirm {
+  border-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
+  margin-left: 25px;
+  width: 250px;
+}
+#updatePWSubmit {
+  background-color: #B2EBF4;
+  margin-left: 25px;
+  width: 250px;
+  height: 40px;
+}
+#secessionDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#YesBtn {
+  border-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
+  margin-left: 25px;
+  width: 250px;
+}
+#NoBtn {
+  border-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
+  margin-left: 25px;
+  width: 250px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="/javascripts/updatePage.js"></script>
+  <script src="/javascripts/mypage.js"></script>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/mypage.css">
+</head>
+
+<script>
+if(history.state.data="users"){ //뒤로가기 눌렸을 때
+  onpopstate = function(event) {
+  reloadMain(); //메인의 2,3번 새로고침 해줌
+ }
+}
+</script>
+
+<body>
+  <div id="SNS" style="text-align: center;">
+    <div style="height:30px;">
+      <form class="changeNameForm" id="changeNameForm" action="/users" method="post" style="float:left; position:relative; left:2%;">
+        <div>
+          <span style="color:darkblue;">NickName</span> : <input type="text" name="changeName" id="changeName" value="<%= user.nickname %>" style="width: 40%; height:25px; border-radius:8px; border:solid 1px gray;">
+          <input type="submit" id="changeNameButton" name="changeNameButton" value="확인" style="width:20%; font-size:13px;">
+        </div>
+      </form>
+      <button type="button" id="secessionBtn" name="secessionBtn" onclick="location.href='/users/secession'" style="float:right; position:relative; right:2%;">회원 탈퇴</button>
+    </div>
+    <br>
+    <div id="mySNS">
+      <script>
+      var boards = "<%= JSON.stringify(boards) %>";
+      var boardsonglist = "<%= JSON.stringify(boardsonglist) %>";
+      var hashtags = "<%= JSON.stringify(hashtags) %>";
+
+      boardsonglist = boardsonglist.replace(/&#34;/gi,'\"');
+      boardsonglist = JSON.parse(boardsonglist);
+
+      boards = boards.replace(/&#34;/gi,'\"');
+      boards = boards.replace(/\\/gi,'\\\\');
+      boards = boards.replace(/&lt;/gi, '');
+      boards = boards.replace(/&gt;/gi, '');
+      boards = boards.replace(/br/gi, '\\n');
+      boards = boards.replace(/\\n/gi, '<br>');
+      boards = boards.replace(/uploads\\<br>/gi, 'uploads\\\\n');
+      boards = JSON.parse(boards);
+
+      hashtags = hashtags.replace(/&#34;/gi,'\"');
+      hashtags = hashtags.replace(/\\/gi,'\\\\');
+      hashtags = hashtags.replace(/\#/gi,'\\#');
+      hashtags = JSON.parse(hashtags);
+
+      myinit(boards, hashtags, boardsonglist);
+      </script>
+    </div>
+    <br>
+
+  </div>
+</body>
+</html>

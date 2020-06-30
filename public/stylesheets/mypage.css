@@ -1,0 +1,29 @@
+#changeNameButton {
+  background-color: #eceff6;
+  border : 0px;
+  width: 100px;
+  height:30px;
+  border-radius : 8px;
+}
+#updateBtn {
+  background-color: #eceff6;
+  border : 0px;
+  width: 15%;
+  height:25px;
+  border-radius : 8px;
+}
+#deleteBtn {
+  background-color: #eceff6;
+  border : 0px;
+  width: 15%;
+  height:25px;
+  border-radius : 8px;
+}
+#secessionBtn {
+  background-color: #eceff6;
+  border : 0px;
+  width: 100px;
+  height:30px;
+  border-radius : 8px;
+  font-size: 13px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<script>
+if(history.state.data="userView"){ //뒤로가기 눌렸을 때
+  onpopstate = function(event) {
+  reloadMain(); //메인의 2,3번 새로고침 해줌
+ }
+}
+</script>
+<body>
+  <div id="SNS" style="text-align: center;">
+    <br>
+    <div style="float:left; position:relative; left:2%;">
+      <h2><span style="color:darkblue;">NickName</span> : <%= user.nickname %>의 게시물<br><br></h2>
+    </div>
+    <div id="userSNS">
+      <script>
+      var user = "<%= JSON.stringify(user) %>";
+      var boards = "<%= JSON.stringify(boards) %>";
+      var boardsonglist = "<%= JSON.stringify(boardsonglist) %>";
+      var hashtags = "<%= JSON.stringify(hashtags) %>";
+
+      boardsonglist = boardsonglist.replace(/&#34;/gi,'\"');
+      boardsonglist = JSON.parse(boardsonglist);
+
+      boards = boards.replace(/&#34;/gi,'\"');
+      boards = boards.replace(/\\/gi,'\\\\');
+      boards = boards.replace(/&lt;/gi, '');
+      boards = boards.replace(/&gt;/gi, '');
+      boards = boards.replace(/br/gi, '\\n');
+      boards = boards.replace(/\\n/gi, '<br>');
+      boards = boards.replace(/uploads\\<br>/gi, 'uploads\\\\n');
+      boards = JSON.parse(boards);
+
+      hashtags = hashtags.replace(/&#34;/gi,'\"');
+      hashtags = hashtags.replace(/\\/gi,'\\\\');
+      hashtags = hashtags.replace(/\#/gi,'\\#');
+      hashtags = JSON.parse(hashtags);
+
+      user = user.replace(/&#34;/gi,'\"');
+      user = JSON.parse(user);
+
+      userinit(boards, hashtags, boardsonglist, user);
+      </script>
+    </div>
+    <br>
+
+  </div>
+</body>
+</html>
