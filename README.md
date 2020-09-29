@@ -20,4 +20,5 @@
 - 게시물 작성, 수정, 삭제, 이미지 추가, 해시태그 추가, 변경, 삭제 기능 구현.
 - 마이페이지 기능 구현.
 
-[![CapstoneDesign SSS](http://img.youtube.com/vi/4HKUNP69eHA/0.jpg)](https://www.youtube.com/watch?v=4HKUNP69eHA) 데모 영상 이미지 링크(Youtubte)
+[![CapstoneDesign SSS](http://img.youtube.com/vi/4HKUNP69eHA/0.jpg)](https://www.youtube.com/watch?v=4HKUNP69eHA) 
+데모 영상 이미지 링크(Youtube)
